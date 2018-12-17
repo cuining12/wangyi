@@ -1,0 +1,262 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+a,s,u{
+	text-decoration: none;
+}
+b,i,em,strong,h1,h2,h3,h4,h5,h6{
+	font-weight: 500;
+	font-style: italic;
+}
+ul,li,ol{
+	list-style: none;
+}
+body,html{
+	width: 100%;
+}
+img{
+    display: block;
+}
+.clear{
+    clear: both;
+}
+			.head{
+				width: 865px;
+				height: 60px;
+				margin: 0 auto;
+				padding-top: 15px;
+				
+			}
+			.logo{
+				margin: 0px 0 12px 0;
+				float: left;
+                cursor: pointer;
+			}
+			.head1{
+				float: right;
+				margin-right: 85px;
+				margin-top: 9px;
+			}
+			.zc{
+				height: 390px;
+				width: 865px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.zcl{
+/*				height: 304px;*/
+				width: 262px;
+				background: #fff;
+				border: 1px solid #ccc;
+				position: absolute;
+				right:85px;
+				top: 36px;
+			}
+			.zcimg{
+				height: 390px;
+				width: 1280px;
+				position: absolute;
+				left: 50%;
+				margin-left: -640px;
+			}
+			.zcl1{
+				width: 131px;
+				height: 38px;
+				text-align: center;
+				line-height: 38px;
+				font-size: 11px;
+				color: red;
+				float: left;
+				border-bottom: 1px solid #ccc;
+                cursor: pointer;
+			}
+            .zcl1:hover{
+                color: red;
+            }
+            .zcl2:hover{
+                color: red;
+            }
+			.zcl2{
+				float: left;
+				width: 131px;
+				height: 38px;
+				text-align: center;
+				line-height: 38px;
+				font-size: 11px;
+				color: #000;
+				background: url(../zhuce/images/a2_03.jpg) no-repeat left center;
+				border-bottom: 1px solid #ccc;
+                cursor: pointer;
+			}
+			.clear{
+				clear: both;
+			}
+			.zcl3{
+				padding: 15px 30px 0 30px;
+				border-bottom: 1px solid #ccc;
+                overflow: hidden;
+			}
+			.zcl31{
+				float: right;
+				background: url(../zhuce/images/a3_03.jpg) no-repeat;
+				height: 11px;
+				font-size: 11px;
+				line-height: 11px;
+				padding-left: 13px;
+				color: #666666;
+				margin-bottom: 7px;
+                cursor: pointer;
+			}
+#youxiangzhanghao{
+    width: 172px;
+				height:25px;
+				border: 1px solid #ccc;
+				background: url(../zhuce/images/a4_03.jpg) no-repeat 8px 6px;
+				padding-left: 29px;
+				color:#ccc;
+				margin-bottom: 12px;
+}
+#youxiangmima{
+    width: 172px;
+				height:25px;
+				border: 1px solid #ccc;
+				background: url(../zhuce/images/a4_03.jpg) no-repeat 8px 6px;
+				padding-left: 29px;
+				color:#ccc;
+				margin-bottom: 25px;
+}
+			#phone{
+				width: 172px;
+				height:25px;
+				border: 1px solid #ccc;
+				background: url(../zhuce/images/a4_03.jpg) no-repeat 8px 6px;
+				padding-left: 29px;
+				color:#ccc;
+				margin-bottom: 12px;
+			}
+.baocuo{
+    color: red;
+    font-size: 10px;
+    line-height: 10px;
+    position: absolute;
+    top: 180px;
+    display: none;
+}
+			#huadong{
+				height: 19px;
+				width: 201px;
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				margin-bottom: 12px;
+			}
+			#yanzhengma{
+				height: 25px;
+				width: 128px;
+				float: left;
+				color: #ccc;
+				font-size: 11px;
+				border: 1px solid #ccc;
+			}
+			#btn{
+				width: 72px;
+				height: 27px;
+				border: 1px solid #ccc;
+				border-left: none;
+				float: left;
+				font-size: 11px;
+				margin-bottom: 23px;
+                cursor: pointer;
+			}
+.shoujihaodenglu{
+    height: 225px;
+}
+.youxiangdenglu{
+    padding-bottom: 25px;
+    display: none;
+}
+            #btn:hover{
+                color: red;
+            }
+			.denglu{
+				font-size: 11px;
+				height:27px;
+				color: #fff;
+				background: red;
+				width: 100%;
+				border: none;
+				margin-bottom: 7px;
+                cursor: pointer;
+			}
+            .zcl31:hover{
+                color: red;
+            }
+            .miandenglucheck{
+                cursor: pointer;
+                color: #ccc;
+                margin-top: 5px;
+            }
+            .miandenglucheck:hover{
+                color: red;
+            }
+            .xuan{
+                cursor: pointer;
+                float: left;
+                margin-top: 5px;
+                margin-right: 3px;
+            }
+            #denglu:hover{
+                opacity: 0.9;
+            }
+            .zcl4{
+                height: 23px;
+                padding-left: 30px;
+                padding-top: 3px;
+            }
+            .zcl4>a>img{
+                height: 19px;
+                float: left;
+                margin-right: 10px;
+            }
+            .zcl4>a>img:hover{
+                opacity: 0.9;
+            }
+            .shoujizhuce{
+                font-size: 13px;
+                line-height: 13px;
+                color: red;
+                float: right;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+            .shoujizhuce:hover{
+                text-decoration: underline;
+            }
+footer{
+    width: 960px;
+    height: 208px;
+    margin: 0 auto;
+    padding-top: 47px;
+}
+footer ul li{
+    float: left;
+}
+footer ul li a{
+    display: block;
+    font-size: 12px;
+    color: #666666;
+    line-height: 28px;
+    background: url(../zhuce/images/footer_1.jpg) no-repeat right center;
+    padding-left: 26px;
+    padding-right: 25px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+footer p{
+    font-size: 10px;
+    line-height: 26px;
+    color: #ccc;
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/denglu.css">
+	</head>
+	<body>
+		<div class="head">
+			<h1 class="logo"><img src="images/logo.jpg" alt=""></h1>
+			<img src="images/head1_03.jpg" alt="" class="head1">
+		</div>
+		<div class="zc">
+			<img src="images/a1.jpg" alt="" class="zcimg">
+			<div class="zcl">
+				<div class="zcl1">手机号登陆</div>
+				<div class="zcl2">邮箱登陆</div>
+				<div class="clear"></div>
+				<div class="zcl3 shoujihaodenglu">
+					<p class="zcl31">使用密码验证登陆</p>
+					<input type="text" id="phone" placeholder="请输入手机号">
+					<div id="huadong"></div>
+					<input type="text" id="yanzhengma" placeholder="请输入短信验证码">
+					<button id="btn">获取验证码</button>
+					<div class="clear"></div>
+					<p class="baocuo shoujihao">请正确输入手机号</p>
+					<button class="denglu">登陆</button>
+					<input type="checkbox" id="xuan">
+					<span style="font-size: 11px;line-height: 11px;height: 11px;float: left" class="miandenglucheck">十天内免登陆</span>
+					<span style="font-size: 11px;line-height: 11px;height: 11px;float: right;margin-top: 5px;" class="miandenglucheck">遇到问题?</span>
+				</div>
+				<div class="zcl3 youxiangdenglu">
+				    <input type="text" placeholder="网易邮箱账号" id="youxiangzhanghao">
+				    <input type="password" placeholder="密码" id="youxiangmima">
+				    <button class="denglu">登陆</button>
+				    <input type="checkbox" class="xuan">
+					<span style="font-size: 11px;line-height: 11px;height: 11px;float: left" class="miandenglucheck">十天内免登陆</span>
+					<span style="font-size: 11px;line-height: 11px;height: 11px;float: right;margin-top: 5px;" class="miandenglucheck">遇到问题?</span>
+				</div>
+				<div class="zcl4">
+				    <a href="#"><img src="images/weixin.jpg" alt=""></a>
+				    <a href="#"><img src="images/zhifubao.jpg" alt=""></a>
+				    <a href="#"><img src="images/weibo.jpg" alt=""></a>
+				    <a href="#"><img src="images/qq.jpg" alt=""></a>
+				    <span class="shoujizhuce">手机快捷注册</span>
+				</div>
+			</div>
+		</div>
+		<footer>
+        <ul>
+            <li><a href="#" style="padding-left: 0;">About NetEase</a></li>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">招聘信息</a></li>
+            <li><a href="#">客户服务</a></li>
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">网络营销</a></li>
+            <li><a href="#" style="padding-right: 0;background: none">网易考拉</a></li>
+            <div class="clear"></div>
+        </ul>
+        <p>网络文化经营许可证：浙网文[2016]0155-055号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：浙B2-20160288&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自营经营者信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（浙）网械平台备字[2018]第00007号</p>
+        <p>浙公网安备 33010802002216号 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网易公司版权所有©1997-2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证书编号（浙）-2017-0027 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备16011229号-6</p>
+    </footer>
+		<script src="jquery.min.js"></script>
+		<script src="../js/denglu_xuanxiangka.js"></script>
+		<script>
+            var phone=document.getElementById("phone")
+            var baocuo=document.querySelector(".baocuo")
+            var phone_zhengze;
+            phone.onblur=function(){
+                phone_zhengze=/^\d{11}$/.test(phone.value)
+                if(phone_zhengze){
+                    this.style.borderColor="green"
+                    baocuo.style.display="none"
+                }else{
+                    this.style.borderColor="red"
+                    baocuo.style.display="block"
+                }
+            }
+        </script>
+	</body>
+</html>
